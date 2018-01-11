@@ -15,6 +15,12 @@ $( document ).ready(function() {
 
 // Create the wordToPigLatin function that takes a word as a parameter and returns a transfromed word. 
 
+$("#PL").click(function() {
+    function Piglatin (word){
+	var word= $("input").val();  
+	return  word + "ay" ; 
+}
+});
 
 
 
