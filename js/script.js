@@ -3,15 +3,25 @@
 // begins with a vowel you just add ay to the end. For example, pig becomes
 // igpay, banana becomes ananabay, and aadvark becomes aadvarkay.
 // CREATE THE FUNCTIONS BELOW
-
+ 
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
   
 	$("#PL").click(function() {
-    	function Piglatin (word){
+    	function Piglatin (){
 			var word= $("input").val();  
 			return  word + "ay" ; 
 		}
+		function wordToPigLatin (){
+			var word= $("input").val(); 
+			var split= word.split();
+			return ;
+		}
+		$("#output").text(Piglatin())
+			
+			
+			
+	
 	});
 
 	
