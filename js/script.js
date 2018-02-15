@@ -8,7 +8,7 @@
 $( document ).ready(function() {
   
 	$("#PL").click(function() {
-    	function Piglatin (){
+    	function latinize (){
 			var word= $("input").val();  
 			return  word + "ay" ; 
 		}
@@ -17,7 +17,17 @@ $( document ).ready(function() {
 			var split= word.split();
 			return ;
 		}
-		$("#output").text(Piglatin())
+		function sentenceToPigLatin (sentence){
+			var sentence = "";
+			var word = $("input").val();
+			var split = word.split("");
+			var length = word.length
+			
+			for(var i = 0; i < length; i++){
+				word += split[i]  + "ay" + " ";
+			}
+		}
+		$("#output").text(latinize());
 			
 			
 			
